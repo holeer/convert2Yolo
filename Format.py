@@ -245,7 +245,7 @@ class VOC:
                 15), suffix='Complete', length=40)
             for filename in filenames:
 
-                xml = open(os.path.join(dir_path, filename), "r")
+                xml = open(os.path.join(dir_path, filename), "r", encoding="utf-8")
 
                 tree = Et.parse(xml)
                 root = tree.getroot()
